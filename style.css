@@ -1,0 +1,143 @@
+:root {
+  --bg: #0a0a0a;
+  --muted: #bfbfbf;
+  --accent: #e53935;
+  --accent-glow: #ff4b4b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a0f0f 100%);
+  color: #f2f2f2;
+}
+
+.topbar {
+  text-align: center;
+  padding: 30px 0 20px;
+}
+
+.topbar h1 {
+  font-size: 34px;
+  margin: 0;
+  color: var(--accent-glow);
+  text-shadow: 0 0 8px rgba(229,57,53,0.6);
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.card {
+  background: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid rgba(229,57,53,0.2);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.book-item {
+  background: rgba(255,255,255,0.05);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s, background 0.2s;
+  border-left: 3px solid var(--accent);
+}
+
+.book-item:hover {
+  transform: translateY(-3px);
+  background: rgba(229,57,53,0.15);
+  box-shadow: 0 0 12px rgba(229,57,53,0.3);
+}
+
+.book-title {
+  font-weight: 600;
+  color: var(--accent-glow);
+}
+
+.book-meta {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.reader {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px;
+  backdrop-filter: blur(4px);
+}
+
+.reader.hidden {
+  display: none;
+}
+
+.reader-header {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--accent-glow);
+}
+
+.reader-content {
+  width: 100%;
+  max-width: 900px;
+  background: #1a0f0f;
+  margin-top: 12px;
+  padding: 18px;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 70vh;
+  border: 1px solid rgba(229,57,53,0.2);
+}
+
+.reader-content pre {
+  white-space: pre-wrap;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #f7dcdc;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent-glow);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 25px;
+}
