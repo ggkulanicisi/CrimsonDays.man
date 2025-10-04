@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr" data-owner="" data-repo="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kızıl Günler — Kitap Arşivi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Kızıl Günler</h1>
+    <p class="subtitle">GitHub’daki kitaplarını burada paylaş, oku, yaşat.</p>
+  </header>
+
+  <main>
+    <section id="booksList" class="card">
+      <h2>Kitap Arşivi</h2>
+      <div id="list" class="list"></div>
+      <div id="empty" class="empty">Yükleniyor...</div>
+    </section>
+  </main>
+
+  <div id="reader" class="reader hidden">
+    <div class="reader-header">
+      <button id="closeReader" class="btn small">Kapat</button>
+      <h3 id="readerTitle">Kitap</h3>
+      <div class="reader-actions">
+        <button id="downloadBtn" class="btn small">İndir</button>
+      </div>
+    </div>
+    <div id="readerContent" class="reader-content"><pre>Yükleniyor...</pre></div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Kızıl Günler | GitHub Pages üzerinden çalışır</p>
+    <span id="hint"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
